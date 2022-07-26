@@ -4,11 +4,11 @@ The objective is to predict the productivity performance of the working team in 
 
 [Dataset Download Link](https://archive.ics.uci.edu/ml/datasets/Productivity+Prediction+of+Garment+Employees#)
 
- ## 2.IDE and Framework
-Google Colab was implemented integrated development environment.Besides,the main frameworks used in this project were Pandas,Numpy,Scikit-Learn and TensorFlow Keras
+## 2.IDE and Framework
+Google Colab was implemented integrated development environment.Besides,the main frameworks used in this project were Pandas,Numpy,Scikit-Learn and TensorFlow Keras.
  
- ## 3.Methodology 
- # 3.1 Data Pipeline 
+## 3.Methodology 
+# 3.1 Data Pipeline 
 Data was loaded and it used several preprocessed data method to generate several datasets show in the table below.Next,the typographical error in department column such as "finishing " will be replaced to "finishing".Besides,categorical features such as day,department and quarter columns were converted to numeric form.In addition, the undefined wip(product work in progress) value will be assigned to zero if the wip column remain.Subsequently the data will be splitted into train-validation-test sets with a ratio of 70:20:10.
 |Dataset|
 |:----|
