@@ -22,9 +22,23 @@ Data was loaded and it used several preprocessed data method to generate several
  
  ![Architecture of model](https://user-images.githubusercontent.com/109932205/180914544-b257bfc4-0a67-4dcf-b0f1-74e4e5fea57d.png)
 
-The model was trained with a batch size 64 and epochs of 400.
+The model was trained with a batch size 64 and epochs of 400.Based on Figure 1 to 4 it show that all the model trained with different dataset show a convergence of model training.
 
+![1](https://user-images.githubusercontent.com/109932205/180920130-c7417f0f-9423-4756-9d93-107400b8b1de.png)
 
+*Figure 1.Training using remove columns of wip and date dataset*
+
+![2](https://user-images.githubusercontent.com/109932205/180920172-d9a7c6ea-72c3-4fd7-a67c-a21113ac3200.png)
+
+*Figure 2.Training using remove column of data dataset.*
+
+![3](https://user-images.githubusercontent.com/109932205/180920216-b8a702d8-2b62-4992-8074-6ce226b964ed.png)
+
+*Figrue 3.Training using remove columns of wip and remain date column dataset.*
+
+![4](https://user-images.githubusercontent.com/109932205/180920257-a6c8f547-fded-430c-b1cd-3da4d789e175.png)
+
+*Figure 4.Training using remove columns of wip and date dataset.*
 
 
 
@@ -37,10 +51,25 @@ The model was tested with the test data.All the evaluation result was shown in t
 |Remove columns of wip and remain date column|0.093|0.018|0.133|0.081|
 |Remain columns of wip and date |0.095|0.017|0.133|0.082|
 
+![1](https://user-images.githubusercontent.com/109932205/180923227-083799e4-b903-4b1b-9492-987e56e919b5.png)
+
+*Figure 5.Predict using remove columns of wip and date dataset*
+
+![2](https://user-images.githubusercontent.com/109932205/180923288-b3c8fc35-264f-428d-a0a4-96852e61e07a.png)
+
+*Figure 6.Predict using remove columns of date dataset*
+
+![3](https://user-images.githubusercontent.com/109932205/180923335-81aa2552-65b2-4067-80e9-bdc077fcff95.png)
 
 
+*Figure 7.Predict using remove columns of wip and remain date column date dataset*
+
+![4](https://user-images.githubusercontent.com/109932205/180923400-bcaca60a-c5aa-489f-81b7-0ffabe30dc39.png)
+
+*Figure 8.Predict using remain columns of wip and date dataset*
 
 
+**According to the result, the dataset for remove column of date give a highest prediction compare to other dataset.**
 
 
 
