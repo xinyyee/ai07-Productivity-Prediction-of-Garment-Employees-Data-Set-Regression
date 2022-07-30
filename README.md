@@ -1,25 +1,32 @@
-# ai07-Productivity-Prediction-of-Garment-Employees-Data-Set
+# Productivity Prediction of Garment Employees Data Set
 ## 1.Objective
-The objective is to predict the productivity performance of the working team in Garment Inudstry.Since Germant Industry had a huge global demand products it is important to track, analysis and predict the productivity of the working teams in their factories.
+
+<p align="justify"> 
+The objective is to predict the productivity performance of the working team in Garment Inudstry.Since Germant Industry had a huge global demand products it is important to track, analysis and predict the productivity of the working teams in their factories.</p>
 
 [Dataset Download Link](https://archive.ics.uci.edu/ml/datasets/Productivity+Prediction+of+Garment+Employees#)
 
 ## 2.IDE and Framework
-Google Colab was implemented integrated development environment.Besides,the main frameworks used in this project were Pandas,Numpy,Scikit-Learn and TensorFlow Keras.
+Google Colab was implemented as integrated development environment.Besides,the main frameworks used in this project were Pandas,Numpy,Scikit-Learn and TensorFlow Keras.
  
 ## 3.Methodology 
 # 3.1 Data Pipeline 
-Data was loaded and the data was preprocessed such that typographical error in department column such as "finishing " will be replaced to "finishing".Besides,categorical features such as day,department and quarter columns were converted to numeric form.In addition, the undefined wip(product work in progress) value will be assigned to zero.Subsequently the dataset will be splitted into 4 different group dataset with ratio of 75:25 train-test dataset by applying k-fold cross-validation.Besides, train dataset will be standardized.
+<p align="justify"> 
+Data was loaded and the data was preprocessed such that typographical error in department column such as "finishing " will be replaced to "finishing".Besides,categorical features such as day,department and quarter columns were converted to numeric form.In addition, the undefined wip(product work in progress) value will be assigned to zero.Subsequently the dataset will be splitted into 4 different group dataset with ratio of 75:25 train-test dataset by applying k-fold cross-validation.Besides, train dataset will be standardized.</p>
 
 
  # 3.2 Model Pipeline
- A functional API model was created to solve the regression problem.The architecture of the model and number of nodes of each layer was shown as figure below.All the hidden layers consists of exponential linear unit(ELU) activation function except the outptut layer it consists of linear activation function.
+ <p align="justify"> 
+ A functional API model was created to solve the regression problem.The architecture of the model and number of nodes of each layer was shown as figure below.All the hidden layers consists of exponential linear unit(ELU) activation function and the outptut layer it consists of linear activation function.</p>
+
+
  
  ![Architecture of model](https://user-images.githubusercontent.com/109932205/181765662-c14af61e-d604-4b9c-a00d-b5b47d12b63c.png)
 
 
+ <p align="justify"> 
+The model was trained with a batch size 700 and epochs of 40 with 4 k-fold cross-validation dataset.The result of the traning and validation was shown in the table below.Next, the training process graph was shown in the figure below.It can observed a convergence sign for the training process.</p>
 
-The model was trained with a batch size 700 and epochs of 40 with 4 k-fold cross-validation dataset.The result of the traning and validation was shown in the table below.Next, the training process graph was shown in the figure below.It can observed a convergence sign for the training process.
 |             | Training | Validation |
 | ----------- | -------- | ---------- |
 | Loss        | 0.0168   | 0.0174     |
